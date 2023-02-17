@@ -1,5 +1,6 @@
 package com.bootcamp.tugas3_bootcampidn
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bootcamp.tugas3_bootcampidn.databinding.ActivityDetailNewsBinding
@@ -22,9 +23,11 @@ class DetailNewsActivity : AppCompatActivity() {
 					.into(imgNews)
 
 				tvJudul.text = news.title
-				tvDeskripsi.text = news.description
+				tvDeskripsi.text = news.content
+
 			}
 		}
+
 	companion object{
 		const val EXTRA_NEWS = "news"
 	}
